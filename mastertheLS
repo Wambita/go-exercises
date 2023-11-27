@@ -1,5 +1,5 @@
 ls
 ls -A
-ls -m
+ls -m | sed 's/ //g'
 ls -u
 ls -p
