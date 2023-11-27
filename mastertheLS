@@ -1,5 +1,5 @@
-ls -1d \.\.\. *
-ls -A 
+ls -1 \.\.\. *
+ls -
 ls -m | sed 's/ //g'
 ls -t
 ls -p
