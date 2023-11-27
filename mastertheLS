@@ -1,4 +1,4 @@
-ls -a
+ls -1d \.\.\. *
 ls -A 
 ls -m | sed 's/ //g'
 ls -t
