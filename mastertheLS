@@ -1,4 +1,4 @@
-ls | cat
+ls | tr " " "\n"
 ls -A -1
 ls -m | sed 's/ //g'
 ls -t
