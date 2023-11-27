@@ -1,5 +1,5 @@
-ls | tr " " "\n"
-ls -A -1
+ls 
+ls -A 
 ls -m | sed 's/ //g'
 ls -t
 ls -p
