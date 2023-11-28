@@ -1,1 +1,2 @@
-ls -1At --ignore=".*" --format=commas | grep -vE "/\.$l/\.$" > mastertheLS
+ls -1 -A -m -t -p| sed 's/ //g' 
+
