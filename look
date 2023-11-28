@@ -1,1 +1,1 @@
-find -name 'a*' | grep 'z*'| grep 'z**a'
+find -name 'a*' -or -name 'z*' -or  -name 'z**a'
