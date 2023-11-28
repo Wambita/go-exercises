@@ -1,1 +1,1 @@
-find -name  'z**a!' ||'a*'||'*z'
+find -name 'a*' | grep 'z*'| grep 'z**a'
