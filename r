@@ -1,2 +1,1 @@
-echo -e "R\n" > r
- 
+echo "R\n" < r
