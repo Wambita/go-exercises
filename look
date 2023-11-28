@@ -1,1 +1,1 @@
-find -name 'a*'||'*z'||'z**a!'
+ind -name 'a*' || '*z' || grep 'z*' && '*a'^C
