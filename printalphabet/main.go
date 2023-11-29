@@ -1,4 +1,5 @@
 package  main 
+//print alphabet
 
 import "github.com/01-edu/z01"
 
