@@ -1,4 +1,5 @@
 package main
+//first go function
 
 import "github.com/01-edu/z01"
 
