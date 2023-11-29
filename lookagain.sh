@@ -1,2 +1,2 @@
-find -type f -name "*.sh" | sed 's|/.*||' | sed 's|\.sh$||' |sort -r
-
+#! bin/bash
+find -type f -name "*.sh" | sed 's|.*/\(.*\).sh$|\1|'| sort -r
