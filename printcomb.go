@@ -1,4 +1,4 @@
-package piscine
+package main
 
 import "github.com/01-edu/z01"
 
@@ -11,13 +11,19 @@ func PrintComb() {
 				z01.PrintRune(k)
 
 				// Check if it's not the last combination, last possible combination is 789
-				if i != 7 && j != 8 && k != 9 {
+				if i != '7' || j != '8' || k != '9' {
 
 					z01.PrintRune(',')
 					z01.PrintRune(' ')
+				} else {
+					z01.PrintRune('\n')
 				}
 			}
 		}
 	}
 	z01.PrintRune('\n')
+}
+
+func main() {
+	PrintComb()
 }
