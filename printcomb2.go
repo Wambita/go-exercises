@@ -10,7 +10,7 @@ func PrintComb2() {
 			for k := '0'; k <= '9'; k++ {
 				for l := '0'; l <= '9'; l++ {
 			// Check if the digits are unique
-			if i > k || (i == k && j>= 1) != i {
+			if i > k || (i == k && j >= 1) != i {
 				continue
 			}
 
