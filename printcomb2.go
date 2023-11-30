@@ -1,8 +1,10 @@
-package piscine
+package main
 
-import "github.com/01-edu/z01"
+import (
+	"github.com/01-edu/z01"
+)
 
-func PrintComb() {
+func PrintComb2() {
 	for i := '0'; i <= '9'; i++ {
 		for j := '0'; j <= '9'; j++ {
 			// Check if the digits are unique
@@ -10,9 +12,10 @@ func PrintComb() {
 
 				z01.PrintRune(i)
 				z01.PrintRune(j)
-
-				z01.PrintRune(',')
-				z01.PrintRune(' ')
+				
+					z01.PrintRune(',')
+					z01.PrintRune(' ')
+				}
 			}
 		}
 	}
