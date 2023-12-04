@@ -1,9 +1,9 @@
-package piscine
+/*package piscine
 
 import "github.com/01-edu/z01"
 
 func PrintComb2() {
-	// get 4 numbers loop
+	/*get 4 numbers loop
 	for i := '0'; i <= '9'; i++ { // first digit first number
 		for j := '0'; j <= '9'; j++ { // second digit first num
 			for k := '0'; k <= '9'; k++ { // first digit second num
@@ -33,3 +33,4 @@ func PrintComb2() {
 	}
 	z01.PrintRune('\n')
 }
+*/
