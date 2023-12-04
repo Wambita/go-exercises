@@ -4,9 +4,12 @@ package piscine
 
 func IterativeFactorial(nb int) int {
 	factorial := 1
-
-	for i := 1; i <= nb; i++ {
-		factorial = factorial * i
+	if nb <= 0 && nb == nb+1 {
+		return 0
+	} else {
+		for i := 1; i <= nb; i++ {
+			factorial = factorial * i
+		}
 	}
 	return factorial
 }
