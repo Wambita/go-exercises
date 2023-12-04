@@ -1,4 +1,6 @@
-package main
+package piscine
+
+// iterative factorial
 
 func IterativeFactorial(nb int) int {
 	factorial := 1
