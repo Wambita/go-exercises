@@ -1,8 +1,6 @@
 package piscine
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // iterative factorial
 
