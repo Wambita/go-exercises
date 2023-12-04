@@ -1,8 +1,8 @@
-package main
+package piscine
 
 import "github.com/01-edu/z01"
 
-func main() {
+func PrintComb2() {
 	// get 4 numbers loop
 	for i := '0'; i <= '9'; i++ { // first digit first number
 		for j := '0'; j <= '9'; j++ { // second digit first num
