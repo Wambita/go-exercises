@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 // iterative factorial
 
 func IterativeFactorial(nb int) int {
@@ -11,9 +9,4 @@ func IterativeFactorial(nb int) int {
 		factorial = factorial * i
 	}
 	return factorial
-}
-
-func main() {
-	arg := 4
-	fmt.Println(IterativeFactorial(arg))
 }
