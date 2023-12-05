@@ -1,6 +1,6 @@
 package piscine
 
-// iterative power
+// iterative power function
 
 func IterativePower(nb int, power int) int {
 	powers := 1
