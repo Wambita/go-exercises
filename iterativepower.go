@@ -4,14 +4,14 @@ package piscine
 
 func IterativePower(nb int, power int) int {
 	powers := 1
-	if nb == 1 || nb == 0 {
+	if power == 1 || power == 0 {
 		return 1
-	} else if nb > 1 && nb <= 23 {
+	} else if power < 0 {
+		return 0 // returns 0 for # greater than 24 and less than 0
+	} else if power > 1 && power <= 23 {
 		for i := 0; i < power; i++ {
 			powers = powers * nb // calculate power using the formula n * n iteratively
 		}
-	} else {
-		return 0 // returns 0 for # greater than 24 and less than 0
 	}
 	return powers
 }
