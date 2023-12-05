@@ -11,7 +11,7 @@ func IterativeFactorial(nb int) int {
 			factorial = factorial * i
 		}
 	} else {
-		return 0
+		return 0 // returns 0 for # greater than 24 and less than 0
 	}
 	return factorial
 }
