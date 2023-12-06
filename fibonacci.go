@@ -1,4 +1,4 @@
-package main
+package piscine
 
 // fibonacci formula : Xn = Xn-1 + Xn-2
 func Fibonacci(index int) int {
