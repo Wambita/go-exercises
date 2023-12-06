@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func UltimateDivMod(a *int, b *int) {
 	var div int = *a / *b
