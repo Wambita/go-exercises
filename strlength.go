@@ -1,6 +1,6 @@
-package main
+package piscine
 
-func StrLen(s string) int {
+func StrLens(s string) int {
 	count := 0
 	// schar := []byte(s)
 	for range s {
@@ -9,6 +9,7 @@ func StrLen(s string) int {
 	return count
 }
 
+//use range for loop
 /*
 func main() {
 	l := StrLen("Hello World!")
