@@ -1,8 +1,7 @@
-package main
+package piscine
 
 func StrLen(s string) int {
 	count := 0
-	// schar := []byte(s)
 	for range s {
 		count = count + 1
 	}
