@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 func IsPrime(nb int) bool {
 	if nb <= 1 { //  for  nums less than or equal to 1 . negative nums aren't prime. 1 isnt prime
 		return false
@@ -16,6 +14,7 @@ func IsPrime(nb int) bool {
 	return true
 }
 
+/*
 func main() {
 	fmt.Println(IsPrime(4))
-}
+}*/
