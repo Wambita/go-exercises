@@ -12,4 +12,5 @@ func StrLen(s string) int {
 func main() {
 	l := StrLen("Hello World!")
 	fmt.Println(l)
+	range for loop
 }*/
