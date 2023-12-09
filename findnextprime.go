@@ -1,6 +1,8 @@
-package piscine
+package main
 
 import "fmt"
+
+// import "fmt"
 
 func IsPrimed(nb int) bool {
 	if nb <= 1 { //  for  nums less than or equal to 1 . negative nums aren't prime. 1 isnt prime
@@ -22,7 +24,7 @@ func FindNextPrime(nb int) int {
 	}
 
 	for nb := 3; ; nb++ {
-		if IsPrimed(nb) {
+		if IsPrimed(nb) == true {
 			return nb
 		}
 		return 0
