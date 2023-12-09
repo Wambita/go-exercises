@@ -1,7 +1,5 @@
 package piscine
 
-import "github.com/01-edu/z01"
-
 /*
 
 func main() {
@@ -13,7 +11,6 @@ func main() {
 */
 func LastRune(s string) rune {
 	srune := []rune(s)
-	z01.PrintRune(srune[len(s)-1])
-	z01.PrintRune('\n')
+	return (srune[len(s)-1])
 	return ' '
 }
