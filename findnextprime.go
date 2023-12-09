@@ -18,16 +18,12 @@ func FindNextPrime(nb int) int {
 	if nb < 2 {
 		return 2
 	}
-	if IsPrimed(nb) {
-		return nb
-	} else {
-		nextprime := nb + 1
-		for nb < nextprime {
-			if IsPrimed(nextprime) {
-				return nextprime
-			} else {
-				nextprime++
-			}
+	nextprime := nb + 1
+	for {
+		if IsPrimed(nextprime) {
+			return nextprime
+		} else {
+			nextprime++
 		}
 	}
 	return 0
