@@ -18,8 +18,18 @@ func FindNextPrime(nb int) int {
 	if nb < 2 {
 		return 2
 	}
+	nextprime := nb + 1
+	for nb < nextprime {
+		if IsPrimed(nextprime) {
+			return nextprime
+		} else {
+			nextprime++
+		}
+	}
+	return 0
+}
 
-	if nb == 2 {
+/*if nb == 2 {
 		return 3
 	}
 	nb++
@@ -30,9 +40,10 @@ func FindNextPrime(nb int) int {
 
 	return nb
 }
-
+*/
 /*
 func main() {
 	fmt.Println(IsPrimed(2))
 	fmt.Println(FindNextPrime(2))
-}*/
+}
+*/
