@@ -18,6 +18,9 @@ func FindNextPrime(nb int) int {
 	if nb < 2 {
 		return 2
 	}
+	IsPrimed(nb){
+		return nb
+	}
 	nextprime := nb + 1
 	for nb < nextprime {
 		if IsPrimed(nextprime) {
