@@ -15,7 +15,7 @@ func IsPrimed(nb int) bool {
 }
 
 func FindNextPrime(nb int) int {
-	if nb < 2 {
+	if nb <= 2 {
 		return 2
 	}
 
@@ -43,7 +43,7 @@ func FindNextPrime(nb int) int {
 */
 /*
 func main() {
-	fmt.Println(IsPrimed(2))
+	fmt.Println(IsPrimed(826447))
 	fmt.Println(FindNextPrime(2))
 }
 */
