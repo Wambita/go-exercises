@@ -14,7 +14,7 @@ func IsPrimed(nb int) bool {
 	return true
 }
 
-func NextPrime(nb int) int {
+func FindNextPrime(nb int) int {
 	nb++                // add one to current number and check if prime
 	for !IsPrimed(nb) { // if not prime add 1 to num and continue till prime number is found
 		nb++
