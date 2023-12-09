@@ -25,8 +25,8 @@ func FindNextPrime(nb int) int {
 		} else {
 			nb++
 		}
+		return 0
 	}
-	return 0
 }
 
 /*if nb == 2 {
