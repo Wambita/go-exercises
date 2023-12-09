@@ -1,6 +1,6 @@
 package piscine
 
-func IsPrime(nb int) bool {
+func IsPrimed(nb int) bool {
 	if nb <= 1 { //  for  nums less than or equal to 1 . negative nums aren't prime. 1 isnt prime
 		return false
 	} else if nb%2 == 0 && nb != 2 { // ensures that the only prime number divisible  by 2 is 2
@@ -15,8 +15,8 @@ func IsPrime(nb int) bool {
 }
 
 func NextPrime(nb int) int {
-	nb++               // add one to current number and check if prime
-	for !IsPrime(nb) { // if not prime add 1 to num and continue till prime number is found
+	nb++                // add one to current number and check if prime
+	for !IsPrimed(nb) { // if not prime add 1 to num and continue till prime number is found
 		nb++
 	}
 	return nb
