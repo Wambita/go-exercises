@@ -23,6 +23,9 @@ func FindNextPrime(nb int) int {
 	if nb == 2 {
 		return 3
 	}
+	if nb < 2 {
+		return 2
+	}
 	return nb
 }
 
