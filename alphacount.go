@@ -1,12 +1,10 @@
-package main
+package piscine
 
-import "fmt"
-
-func main() {
+/*func main() {
 	s := "Hello 78 World!    4455 /"
 	nb := AlphaCount(s)
 	fmt.Println(nb)
-}
+}*/
 
 func AlphaCount(s string) int {
 	srune := []rune(s)
