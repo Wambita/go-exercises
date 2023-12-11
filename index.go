@@ -11,6 +11,10 @@ func Index(s string, toFind string) int {
 	srune := []rune(s)
 	toFindRune := []rune(toFind)
 
+	if len(toFindRune) == 0 {
+		return 0
+	}
+
 	for i, value := range srune {
 		if value == toFindRune[0] {
 			return i
