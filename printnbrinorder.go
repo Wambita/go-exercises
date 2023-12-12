@@ -1,8 +1,7 @@
 package piscine
 
 import (
-	"fmt"
-	"strconv"
+	"github.com/01-edu/z01"
 )
 
 /*
@@ -13,21 +12,25 @@ func main() {
 }*/
 
 func PrintNbrInOrder(n int) {
-	// string
-	nstring := strconv.Itoa(n)
-	nrune := []rune(nstring)
-
 	// array to store count of each digit
 	count := make([]int, 10)
 
 	// count occurence of each digit
-	for _, num := range nrune {
-		count[num-'0']++
+	if n == 0 {
+		z01.PrintRune('0')
+	}
+
+	for n > 0 {
+		number := n % 10
+		count[number]++
+		n /= 10
+
 	}
 	// print digits in ascending order
 	for i := 0; i < 10; i++ {
 		for j := 0; j < count[i]; j++ {
-			fmt.Print(i)
+			tuRune := '0' + rune(i)
+			z01.PrintRune(tuRune)
 		}
 	}
 }
