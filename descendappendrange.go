@@ -9,7 +9,7 @@ func main() {
 func DescendAppendRange(max, min int) []int {
 	var numb []int
 	if max <= min {
-		return numb
+		return []int{} // empty slice
 	}
 	for i := max; i > min; i-- {
 		numb = append(numb, i)
