@@ -49,7 +49,7 @@ func main() {
 	x, y := points.x, points.y
 	printStr("x = ")
 	PrintValue(x)
-	printStr(" y = ")
+	printStr(", y = ")
 	PrintValue(y)
 	z01.PrintRune('\n')
 }
