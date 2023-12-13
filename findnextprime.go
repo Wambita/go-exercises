@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 // import "fmt"
 
@@ -43,8 +41,8 @@ func FindNextPrime(nb int) int {
 	return nb
 }
 */
-
+/*
 func main() {
 	fmt.Println(IsPrimed(826447))
 	fmt.Println(FindNextPrime(826447))
-}
+}*/
