@@ -12,7 +12,8 @@ func Sqrt(nb int) int {
 	return 0
 }
 
-/*func main() {
+/*
+func main() {
 	// arg1 := 4
-	fmt.Println(Sqrt(4))
+	fmt.Println(Sqrt(16))
 }*/
