@@ -4,42 +4,52 @@ import (
 	"github.com/01-edu/z01"
 )
 
-type point struct {
+type point struct { // structure
 	x int
 	y int
 }
 
-func printStr(s string) {
+func printStr(s string) { // print strings
 	for _, r := range s {
 		z01.PrintRune(r)
 	}
 }
 
-func setPoint(ptr *point) {
+func setPoint(ptr *point) { // assign values to the pointer structures
 	ptr.x = 42
 	ptr.y = 21
+}
+
+func PrintDigits(n int) { // print the numbers as runes
+	if n < 0 || n > 9 {
+		return
+	}
+	digits := []rune{48, 49, 50, 51, 52, 53, 54, 55, 56, 57} // ascii chars of 0-9
+	digit := digits[n]
+	z01.PrintRune(digit)
+}
+
+func PrintValue(value int) {
+	if value < 0 {
+		z01.PrintRune('-')
+		value = -value
+	}
+	if value < 10 {
+		PrintDigits(value)
+	} else { // cases greater than 9
+		PrintValue(value / 10)
+		PrintValue(value % 10)
+	}
 }
 
 func main() {
 	points := &point{}
 	setPoint(points)
-	/*
-		pointsx := []int{(points.x)}
-		pointsy := []int{(points.y)}
-		printStr("x = ")
-		for _, pointx := range pointsx {
-			z01.PrintRune(rune(pointx))
-		}
-		printStr(",y = ")
-		for _, pointy := range pointsy {
-			z01.PrintRune(rune(pointy))
-		}*/
-	setPoint(points)
+
+	x, y := points.x, points.y
 	printStr("x = ")
-	z01.PrintRune('0' + rune(points.x/10))
-	z01.PrintRune('0' + rune(points.x%10))
-	printStr(",y = ")
-	z01.PrintRune('0' + rune(points.y/10))
-	z01.PrintRune('0' + rune(points.y%10))
-	z01.PrintRune(rune(points.y))
+	PrintValue(x)
+	printStr(" y = ")
+	PrintValue(y)
+	z01.PrintRune('\n')
 }
