@@ -22,13 +22,24 @@ func setPoint(ptr *point) {
 
 func main() {
 	points := &point{}
-
+	setPoint(points)
+	/*
+		pointsx := []int{(points.x)}
+		pointsy := []int{(points.y)}
+		printStr("x = ")
+		for _, pointx := range pointsx {
+			z01.PrintRune(rune(pointx))
+		}
+		printStr(",y = ")
+		for _, pointy := range pointsy {
+			z01.PrintRune(rune(pointy))
+		}*/
 	setPoint(points)
 	printStr("x = ")
 	z01.PrintRune('0' + rune(points.x/10))
 	z01.PrintRune('0' + rune(points.x%10))
 	printStr(",y = ")
-	z01.PrintRune('0' + rune(points.x/10))
-	z01.PrintRune('0' + rune(points.x%10))
+	z01.PrintRune('0' + rune(points.y/10))
+	z01.PrintRune('0' + rune(points.y%10))
 	z01.PrintRune(rune(points.y))
 }
