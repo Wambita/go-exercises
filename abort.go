@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func Abort(a, b, c, d, e int) int {
 	num := []int{a, b, c, d, e}
