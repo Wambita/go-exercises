@@ -12,5 +12,5 @@ func Unmatch(a []int) int {
 			return num
 		}
 	}
-	return -1
+	return 1
 }
