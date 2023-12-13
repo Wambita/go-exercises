@@ -1,9 +1,6 @@
-package main
+package piscine
 
-import (
-	"github.com/01-edu/z01"
-)
-
+/*
 func main() {
 	result := Rot14("Hello! How are You?")
 
@@ -11,7 +8,7 @@ func main() {
 		z01.PrintRune(r)
 	}
 	z01.PrintRune('\n')
-}
+}*/
 
 func Rot14(s string) string {
 	a := []rune(s)
