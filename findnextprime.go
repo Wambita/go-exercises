@@ -24,8 +24,8 @@ func FindNextPrime(nb int) int {
 	}
 
 	for i := nb; ; i++ {
-		if IsPrimed(i) == true {
-			return i
+		if IsPrimed(nb) == true {
+			return nb
 		}
 		return 0
 	}
