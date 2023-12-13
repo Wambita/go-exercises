@@ -7,7 +7,7 @@ func main() {
 }
 */
 func ShoppingListSort(slice []string) []string {
-	var list []string
+	list := make([]string, 10)
 	for i := 0; i < len(slice)-1; i++ {
 		for j := i + 1; j < len(slice); j++ {
 			if len(slice[i]) > len(slice[j]) {
@@ -15,8 +15,8 @@ func ShoppingListSort(slice []string) []string {
 			}
 		}
 	}
-	for _, item := range slice {
-		list = append(list, item)
+	for i, item := range slice {
+		list[i] = item
 	}
 	return list
 }
