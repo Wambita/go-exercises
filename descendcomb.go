@@ -1,4 +1,4 @@
-package piscine
+package main
 
 import "github.com/01-edu/z01"
 
@@ -27,6 +27,6 @@ func DescendComb() {
 	z01.PrintRune('\n')
 }
 
-/*func main() {
+func main() {
 	DescendComb()
-}*/
+}
