@@ -1,15 +1,12 @@
 package main
 
-import (
-	"fmt"
-)
-
+/*
 func main() {
 	fmt.Println(RockAndRoll(4))
 	fmt.Println(RockAndRoll(9))
 	fmt.Println(RockAndRoll(6))
 }
-
+*/
 func RockAndRoll(n int) string {
 	if n < 0 {
 		return "error: number is negative \n"
