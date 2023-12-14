@@ -21,8 +21,10 @@ func main() {
 		if err != nil {
 			fmt.Print("Unable to read file:", err)
 			return
+		} else {
+			// print content of standard output
+			fmt.Print(string(content))
 		}
-		// print content of standard output
-		fmt.Print(string(content))
+
 	}
 }
