@@ -1,4 +1,4 @@
-package main
+package piscine
 
 import "github.com/01-edu/z01"
 
@@ -7,7 +7,7 @@ func DescendComb() {
 		for j := '9'; j >= '0'; j-- {
 			for k := '9'; k >= '0'; k-- {
 				for l := '8'; l >= '0'; l-- {
-					if i > k || (i == k && j > l) {
+					if i == j && k == l {
 						continue
 					}
 					z01.PrintRune(i)
