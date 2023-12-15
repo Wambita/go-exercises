@@ -1,9 +1,9 @@
 package piscine
 
 func StrLen(s string) int {
-	count := 0
-	for range s {
-		count = count + 1
+	count := 0    // initialize count var
+	for range s { // loop through string
+		count = count + 1 // update count
 	}
 	return count
 }

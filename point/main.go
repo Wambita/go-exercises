@@ -29,7 +29,7 @@ func PrintDigits(n int) { // print the numbers as runes
 	z01.PrintRune(digit)
 }
 
-func PrintValue(value int) {
+func PrintValue(value int) { // print numbers as runes like one by one can't print more than one num at a time
 	if value < 0 {
 		z01.PrintRune('-')
 		value = -value
