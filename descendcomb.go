@@ -27,6 +27,8 @@ func DescendComb() {
 	z01.PrintRune('\n')
 }
 
+/*
 func main() {
 	DescendComb()
 }
+*/
