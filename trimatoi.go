@@ -1,4 +1,4 @@
-package piscine
+package main
 
 /*
 func main() {
@@ -12,6 +12,37 @@ func main() {
 	fmt.Println(TrimAtoi("sdx1+fa2W3s4"))
 }
 */
+func Atoi(s string) (int, bool) {
+	if len(s) == 0 {
+		return 0, false
+	}
+	result := 0
+	isNegative := false
+
+	// check for negative sign at the start
+	if s[0] == '-' {
+		isNegative = true
+		s = s[1:] // skip the -ve sign
+	}
+	// iterate through each char in the string
+	for _, char := range s {
+		// check if char is a digit
+		if char < '0' || char > '9' {
+			return 0, false
+		}
+		// convert digit to num value
+		digit := int(char - '0')
+
+		// update result by multiplying by 10 and adding the digit
+		result = result*10 + digit
+	}
+	// apply the sign based on isNegative
+	if isNegative {
+		result = -result
+	}
+	return result, true
+}
+
 func TrimAtoi(s string) int {
 	// trims a string and converts the remaining numeric chars to int
 
@@ -40,7 +71,10 @@ func TrimAtoi(s string) int {
 	if len(num) == 0 || num == "-" {
 		return 0
 	}
-
+	result, ok := Atoi(num)
+	if !ok {
+		return 0
+	}
 	// convert string to int
-	return Atoi(num)
+	return result
 }
