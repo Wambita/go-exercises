@@ -1,9 +1,6 @@
-package main
+package piscine
 
-import (
-	"fmt"
-)
-
+/*
 func main() {
 	fmt.Println(TrimAtoi("12345"))
 	fmt.Println(TrimAtoi("str123ing45"))
@@ -14,7 +11,7 @@ func main() {
 	fmt.Println(TrimAtoi("sdx1-fa2W3s4"))
 	fmt.Println(TrimAtoi("sdx1+fa2W3s4"))
 }
-
+*/
 func TrimAtoi(s string) int {
 	// trims a string and converts the remaining numeric chars to int
 
