@@ -21,7 +21,7 @@ func TrimAtoi(s string) int {
 	}
 
 	// empty string to store numeric chars
-	var num string
+	var num string = ""
 
 	// loop through each char in string range for loop
 	for _, n := range s {
@@ -30,7 +30,7 @@ func TrimAtoi(s string) int {
 			num += "-"
 		}
 		// skip all chars that aren't digits
-		if n < '0' && n > '9' {
+		if n < '0' || n > '9' {
 			continue
 		}
 		// add num chars to string
