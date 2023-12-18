@@ -17,23 +17,14 @@ func IsPrimed(nb int) bool {
 }
 
 func FindNextPrime(nb int) int {
-	if nb < 2 {
+	if nb <= 2 {
 		return 2
 	}
-
-	if nb == 2 {
-		return 3
-	}
-	// add one to current number and check if prime
-	var i int = nb + 1
-	for nb < i {
+	for i := nb; ; i++ {
 		if IsPrimed(i) {
 			return i
-		} else {
-			i++
 		}
 	}
-	return 0
 }
 
 /*
