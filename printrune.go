@@ -2,7 +2,7 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func main() {
+func PrintRune() {
 	var aRune string = "Ahh"
 	var aRunelength int = len(aRune)
 	// z01.PrintRune(aRune)
