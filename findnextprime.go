@@ -25,9 +25,6 @@ func FindNextPrime(nb int) int {
 		return 3
 	}
 	nb++
-	if IsPrimed(nb) {
-		return nb
-	}
 	// add one to current number and check if prime
 	var i int = nb + 1
 	for nb < i {
