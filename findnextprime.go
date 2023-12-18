@@ -20,11 +20,10 @@ func FindNextPrime(nb int) int {
 	if nb < 2 {
 		return 2
 	}
-	nb++
+
 	if nb == 2 {
 		return 3
 	}
-	nb++
 	// add one to current number and check if prime
 	var i int = nb + 1
 	for nb < i {
