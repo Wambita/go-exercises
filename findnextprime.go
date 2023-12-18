@@ -20,29 +20,32 @@ func FindNextPrime(nb int) int {
 	if nb <= 2 {
 		return 2
 	}
-
-	for i := nb; ; i++ {
-		if IsPrimed(nb) == true {
-			return nb
-		}
-		return 0
-	}
-}
-
-/*if nb == 2 {
+	if nb == 2 {
 		return 3
 	}
 	nb++
 	// add one to current number and check if prime
 	for !IsPrimed(nb) { // if not prime add 1 to num and continue till prime number is found
 		nb++
+
+		return nb
 	}
 
+	if nb > 3 {
+		for i := nb; ; i++ {
+			nb++
+			if IsPrimed(nb) == true {
+				return nb
+			}
+			return 0
+		}
+	}
 	return nb
 }
-*/
+
 /*
 func main() {
 	fmt.Println(IsPrimed(826447))
 	fmt.Println(FindNextPrime(826447))
-}*/
+}
+*/
