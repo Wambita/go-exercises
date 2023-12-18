@@ -20,7 +20,7 @@ func ShoppingSummaryCounter(str string) map[string]int {
 		// loop through each char in the input string
 		for i := 0; i < len(str); i++ {
 			// chech if current is whitespace char
-			isSpace := str[i] == ' '
+			isSpace := str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\r'
 
 			// if we are inside a word, check for the end of the word
 			if inWord {
