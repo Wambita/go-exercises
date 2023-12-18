@@ -17,30 +17,27 @@ func IsPrimed(nb int) bool {
 }
 
 func FindNextPrime(nb int) int {
-	if nb <= 2 {
+	if nb < 2 {
 		return 2
 	}
+	nb++
 	if nb == 2 {
 		return 3
 	}
 	nb++
-	// add one to current number and check if prime
-	for !IsPrimed(nb) { // if not prime add 1 to num and continue till prime number is found
-		nb++
-
+	if IsPrimed(nb) {
 		return nb
 	}
-
-	if nb > 3 {
-		for i := nb; ; i++ {
-			nb++
-			if IsPrimed(nb) == true {
-				return nb
-			}
-			return 0
+	// add one to current number and check if prime
+	var i int = nb + 1
+	for nb < i {
+		if IsPrimed(i) {
+			return i
+		} else {
+			i++
 		}
 	}
-	return nb
+	return 0
 }
 
 /*
