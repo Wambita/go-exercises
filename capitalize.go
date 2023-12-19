@@ -27,8 +27,8 @@ func Capitalize(s string) string {
 	}
 
 	IsAlpha := func(s string) bool {
-		srune := []rune(s)
-		for _, value := range srune {
+		// srune := []rune(s)
+		for _, value := range s {
 			if (value >= 'a' && value <= 'z') || (value >= 'A' && value <= 'Z') || value >= '0' && value <= '9' {
 				continue
 			} else {
@@ -56,7 +56,9 @@ func Capitalize(s string) string {
 }
 
 /*
+
 func main() {
 	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
+	fmt.Println(Capitalize("yv>+L<YV^yY}J"))
 }
 */
