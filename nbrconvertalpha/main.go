@@ -36,9 +36,8 @@ func main() {
 		} else {
 			z01.PrintRune(' ')
 		}
-
+		z01.PrintRune('\n')
 	}
-	// z01.PrintRune('\n')
 }
 
 func atoi(s string) int {
