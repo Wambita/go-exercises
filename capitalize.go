@@ -60,5 +60,6 @@ func main() {
 	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
 	fmt.Println(Capitalize("yv>+L<YV^yY}J"))
 	fmt.Println(Capitalize("VbE(9gjvr<_\\B"))
+	fmt.Println(Capitalize("_O?H7(eusf~}y"))
 }
 */
