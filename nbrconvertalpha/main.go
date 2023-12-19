@@ -17,13 +17,16 @@ func main() {
 		upper = true
 		args = args[1:]
 	}
-
+	if len(args) == 0 {
+		return
+	}
 	// loop through each arg to turn string into int
 
 	for _, arg := range args {
 		position := atoi(arg) // pos of letter as arg
 
 		// range should be btwn 1-26
+
 		if position >= 1 && position <= 26 {
 			// get letter in corresponding no.
 			letter := 'a' + rune(position-1)
