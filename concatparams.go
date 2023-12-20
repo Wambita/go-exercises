@@ -1,14 +1,11 @@
-package main
+package piscine
 
-import (
-	"fmt"
-)
-
+/*
 func main() {
 	test := []string{"Hello", "how", "are", "you?"}
 	fmt.Println(ConcatParams(test))
 }
-
+*/
 func ConcatParams(args []string) string {
 	var array string          // empty string to store arguments
 	for index := range args { // loop through slice using index
