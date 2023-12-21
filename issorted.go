@@ -24,15 +24,15 @@ func f(a, b int) int {
 func IsSorted(f func(a, b int) int, a []int) bool {
 	var sorted bool
 	for i := 0; i < len(a)-1; i++ {
-		if f(a[i], a[i+1]) > 0 {
+		if f(a[i], a[i+1]) < 0 {
 			// if slice +ve , slice not sorted return false
-			sorted = false
+			sorted = true
 		}
 	}
 	if sorted == false {
 		sorted = true
 		for i := 0; i < len(a)-1; i++ {
-			if f(a[i], a[i+1]) < 0 {
+			if f(a[i], a[i+1]) > 0 {
 				sorted = false
 			}
 		}
