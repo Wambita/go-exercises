@@ -14,19 +14,19 @@ func main() {
 	}
 }
 */
-type NodeL struct {
+type NodeLs struct {
 	Data interface{}
-	Next *NodeL
+	Next *NodeLs
 }
 
-type List struct {
-	Head *NodeL
-	Tail *NodeL
+type Lists struct {
+	Head *NodeLs
+	Tail *NodeLs
 }
 
 // push new elem at the end of list
-func ListPushBack(l *List, data interface{}) {
-	newNode := &NodeL{Data: data, Next: nil}
+func ListPushBack(l *Lists, data interface{}) {
+	newNode := &NodeLs{Data: data, Next: nil}
 	if l.Head == nil {
 		l.Head = newNode
 		l.Tail = newNode
