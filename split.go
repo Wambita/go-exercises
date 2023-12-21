@@ -30,14 +30,14 @@ func main() {
 func Split(s, sep string) []string {
 	// iteration
 	for i := 0; i < len(s); i++ {
-		if Index(s, sep) != -1 {
-			s = s[0:Index(s, sep)] + " " + s[Index(s, sep)+len(sep):]
+		if Indexed(s, sep) != -1 {
+			s = s[0:Indexed(s, sep)] + " " + s[Indexed(s, sep)+len(sep):]
 		}
 	}
 	return SplitWhiteSpaced(s)
 }
 
-func Index(s string, toFind string) int {
+func Indexed(s string, toFind string) int {
 	// returns the index of the first instance of substring return -1 if not present
 
 	// calculate lengths of input strings
