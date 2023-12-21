@@ -1,6 +1,6 @@
 package piscine
 
-func SplitWhiteSpaced(s string) []string {
+func SplitWhiteSpace(s string) []string {
 	var answer []string // store final result
 	var words string    // temporarily holds char to form a word
 
@@ -34,7 +34,7 @@ func Split(s, sep string) []string {
 			s = s[0:Indexed(s, sep)] + " " + s[Indexed(s, sep)+len(sep):]
 		}
 	}
-	return SplitWhiteSpaced(s)
+	return SplitWhiteSpace(s)
 }
 
 func Indexed(s string, toFind string) int {
