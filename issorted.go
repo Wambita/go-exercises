@@ -17,7 +17,6 @@ func main() {
 	fmt.Println(result3)
 	fmt.Println(result4)
 }
-}
 
 // sample func
 func f(a, b int) int {
@@ -26,17 +25,17 @@ func f(a, b int) int {
 */
 // func issorted
 func IsSorted(f func(a, b int) int, a []int) bool {
-	var sorted bool
+	var sorted bool = true
 	for i := 0; i < len(a)-1; i++ {
-		if f(a[i], a[i+1]) < 0 {
+		if f(a[i], a[i+1]) > 0 {
 			// if slice +ve , slice not sorted return false
-			sorted = true
+			sorted = false
 		}
 	}
 	if !sorted {
-		sorted = false
+		sorted = true
 		for i := 0; i < len(a)-1; i++ {
-			if f(a[i], a[i+1]) > 0 {
+			if f(a[i], a[i+1]) < 0 {
 				sorted = false
 			}
 		}
