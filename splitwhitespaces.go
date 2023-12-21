@@ -1,13 +1,10 @@
-package main
+package piscine
 
-import (
-	"fmt"
-)
-
+/*
 func main() {
 	fmt.Printf("%#v\n", SplitWhiteSpaces("Hello how are you?"))
 }
-
+*/
 // takes a string and splits it into words based on spaces, tabs, newlines
 func SplitWhiteSpaces(s string) []string {
 	var answer []string // store final result
