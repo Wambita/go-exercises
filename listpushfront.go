@@ -2,7 +2,7 @@ package piscine
 
 /*
 func main() {
-	link := &List{}
+	link := &Lists{}
 
 	ListPushFront(link, "Hello")
 	ListPushFront(link, "man")
@@ -17,27 +17,27 @@ func main() {
 }
 */
 // node structure
-type NodeL struct {
+type NodeS struct {
 	Data interface{}
-	Next *NodeL
+	Next *NodeS
 }
 
 // list structures
-type List struct {
-	Head *NodeL
-	Tail *NodeL
+type Lists struct {
+	Head *NodeS
+	Tail *NodeS
 }
 
 func ListPushFront(l *List, data interface{}) {
-	newNode := &NodeL{Data: data, Next: nil}
+	newNodes := &NodeS{Data: data, Next: nil}
 
 	if l.Head == nil {
-		l.Head = newNode
-		l.Tail = newNode
+		l.Head = newNodes
+		l.Tail = newNodes
 	} else { // update Nextfield of newNode to point to the current head
 		// update head to point to new node
-		newNode.Next = l.Head
-		l.Head = newNode
+		newNodes.Next = l.Head
+		l.Head = newNodes
 
 	}
 }
