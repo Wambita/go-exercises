@@ -1,4 +1,4 @@
-package main
+package piscine
 
 /*
 // push new elem at the end of list
