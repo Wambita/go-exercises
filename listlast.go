@@ -24,20 +24,20 @@ func ListPushBack(l *List, data interface{}) {
 		l.Tail = newNode
 	}
 }
-*/
+
 // node
-type NodeP struct {
+type NodeL struct {
 	Data interface{}
-	Next *NodeP
+	Next *NodeL
 }
 
 // list
-type ListP struct {
-	Head *NodeP
-	Tail *NodeP
+type List struct {
+	Head *NodeL
+	Tail *NodeL
 }
-
-func ListLast(l *ListP) interface{} {
+*/
+func ListLast(l *List) interface{} {
 	if l.Tail == nil {
 		return nil
 	} else {
